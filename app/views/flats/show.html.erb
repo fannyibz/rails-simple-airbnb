@@ -1,0 +1,24 @@
+<div class="banner">
+  <h3>Simple Airbnb</h3>
+  <%= link_to "Add a flat", new_flat_path %>
+</div>
+
+
+<div class="container">
+  <div class="infos-center">
+    <h1> <%= @flat.name %>  </h1>
+    <p> <%= @flat.address %> </p>
+  </div>
+
+  <div class="infos-center">
+    <h2>A bit more about this flat...</h1>
+    <p> <%= @flat.description %> </p>
+  </div>
+
+  <div class="infos-center">
+    <h1> <%= @flat.number_of_guests %>  </h1>
+    <p> <%= @flat.private %> </p>
+  </div>
+</div>
+
+
